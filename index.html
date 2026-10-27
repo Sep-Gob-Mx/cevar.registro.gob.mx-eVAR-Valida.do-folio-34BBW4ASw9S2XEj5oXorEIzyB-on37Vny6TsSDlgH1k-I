@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -10,6 +11,7 @@
             margin: 0;
             padding: 0;
             background: #f2f2f2;
+            overflow-x: hidden;
         }
 
         img {
@@ -18,16 +20,13 @@
             height: auto;
         }
 
-        /* Configuración para celulares */
-        @media (max-width: 768px) {
-            body {
-                overflow-x: hidden;
-            }
-
+        /* Vista para celular */
+        @media (max-width: 785px) {
             img {
                 width: 200%;
                 max-width: none;
                 height: auto;
+                margin-left: -50%;
             }
         }
     </style>
@@ -35,5 +34,8 @@
 
 <body>
     <img src="pagina.png" alt="Consulta">
+</body>
+</html>
+
 </body>
 </html>
