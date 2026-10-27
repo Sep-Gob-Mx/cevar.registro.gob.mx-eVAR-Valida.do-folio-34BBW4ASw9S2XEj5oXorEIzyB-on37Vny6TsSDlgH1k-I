@@ -6,15 +6,9 @@
     <title>Consulta</title>
 
     <style>
-        * {
-            box-sizing: border-box;
-        }
-
-        html, body {
+        body {
             margin: 0;
             padding: 0;
-            width: 100%;
-            min-height: 100%;
             background: #f2f2f2;
         }
 
@@ -24,9 +18,15 @@
             height: auto;
         }
 
+        /* Configuración para celulares */
         @media (max-width: 768px) {
+            body {
+                overflow-x: hidden;
+            }
+
             img {
-                width: 100%;
+                width: 200%;
+                max-width: none;
                 height: auto;
             }
         }
@@ -34,6 +34,6 @@
 </head>
 
 <body>
-    <img src="pagina.png" alt="Página de consulta">
+    <img src="pagina.png" alt="Consulta">
 </body>
 </html>
