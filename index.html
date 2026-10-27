@@ -1,3 +1,8 @@
+-50 que pusiste, pero solo del celular de la pc igual
+Perfecto. Vamos a hacer que en el celular la imagen se vea más larga hacia abajo, quitando el margin-left: -50%, pero manteniendo la versión de computadora exactamente igual.
+
+Usa este código completo:
+
 
 <!DOCTYPE html>
 <html lang="es">
@@ -11,7 +16,6 @@
             margin: 0;
             padding: 0;
             background: #f2f2f2;
-            overflow-x: hidden;
         }
 
         img {
@@ -20,13 +24,18 @@
             height: auto;
         }
 
-        /* Vista para celular */
-        @media (max-width: 785px) {
+        /* SOLO CELULARES */
+        @media (max-width: 768px) {
+            body {
+                overflow-x: hidden;
+            }
+
             img {
-                width: 200%;
+                width: 100%;
+                height: 150vh;
+                object-fit: cover;
+                object-position: center top;
                 max-width: none;
-                height: auto;
-                margin-left: -50%;
             }
         }
     </style>
@@ -34,8 +43,5 @@
 
 <body>
     <img src="pagina.png" alt="Consulta">
-</body>
-</html>
-
 </body>
 </html>
